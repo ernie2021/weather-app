@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body class="container-fluid">
+    <!--Header with title-->
+    <header>
+        <nav class="navbar custom-1 navbar-dark">
+            <div class="container-fluid d-flex justify-content-center">
+              <h1 class="navbar-brand mb-0 h1">Weather Dashboard</h1>
+            </div>
+          </nav>
+    </header>
+
+    <main class="row">
+        <!--Search area and results-->
+        <aside class="col-3 d-flex flex-column">
+            <!--Search area-->
+            <section class="mb-2">
+                <p>Search for City:</p>
+                <input type="text" name="search" placeholder="Long Beach, CA" id="searchCity">
+                <input class="btn btn-primary" type="submit" value="Submit" id="submitButton">
+            </section>
+            <!--Results, Dynamically generated-->
+            <ul class="border-top d-flex flex-column" id="citiesList">
+
+            </ul>
+        </aside>
+
+        <section class="col-9">
+            <!--Current Weather-->
+            <section id="currentWeather">
+                <span class="d-flex flex-row align-items-center">
+                <p id="currentWeatherDate">Location and date</p>
+                <img src="" alt="" id="currentWeatherIcon">
+                </span>
+                <p id="currentWeatherTemp">temp</p>
+                <p id="currentWeatherWind">wind</p>
+                <p id="currentWeatherHumidity">Humidity</p>
+                <p id="currentWeatherUV">UV Index <span id="uvSpan"></span></p>
+            </section>
+            <!---5-day forecast-->
+            <section class="d-flex flex-row justify-content-start w-100 " id="forecast">
+                <!--Day 1 weather card-->
+                <article class="custom-width-1 custom-2 mr-3 forecastEntry">
+                    <p class="forecastDate">date</p>
+                    <img src="" class="forecastEmoji"></img>
+                    <p class="forecastTemp">temp</p>
+                    <p class="forecastWind">wind</p>
+                    <p class="forecastHumidity">humidity</p>
+                </article>
+                <!--Day 2 weather card-->
+                <article class="custom-width-1 custom-2 mx-3 forecastEntry">
+                    <p class="forecastDate">date</p>
+                    <img src="" class="forecastEmoji"></img>
+                    <p class="forecastTemp">temp</p>
+                    <p class="forecastWind">wind</p>
+                    <p class="forecastHumidity">humidity</p>
+                </article>
+                <!--Day 3 weather card-->
+                <article class="custom-width-1 custom-2 mx-3 forecastEntry">
+                    <p class="forecastDate">date</p>
+                    <img src="" class="forecastEmoji"></img>
+                    <p class="forecastTemp">temp</p>
+                    <p class="forecastWind">wind</p>
+                    <p class="forecastHumidity">humidity</p>
+                </article>
+                <!--Day 4 weather card-->
+                <article class="custom-width-1 custom-2 mx-3 forecastEntry">
+                    <p class="forecastDate">date</p>
+                    <img src="" class="forecastEmoji"></img>
+                    <p class="forecastTemp">temp</p>
+                    <p class="forecastWind">wind</p>
+                    <p class="forecastHumidity">humidity</p>
+                </article>
+                <!--Day 5 weather card-->
+                <article class="custom-width-1 custom-2 ml-3 forecastEntry">
+                    <p class="forecastDate">date</p>
+                    <img src="" class="forecastEmoji"></img>
+                    <p class="forecastTemp">temp</p>
+                    <p class="forecastWind">wind</p>
+                    <p class="forecastHumidity">humidity</p>
+                </article>
+                
+            </section>
+        </section>
+        
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./javascript.js"></script>
+</body>
+</html>

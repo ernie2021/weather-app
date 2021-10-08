@@ -1,0 +1,29 @@
+.custom-1 {
+    background: linear-gradient(90deg, rgba(13,110,253,1) 0%, rgba(102,16,242,1) 100%);;
+}
+
+.custom-2 {
+    background-color: #2d3e50;
+}
+
+.custom-width-1 {
+    width: 250px;
+}
+
+.currentWeatherUV {
+    background-color: white;
+}
+
+/*forecast card style*/
+.forecastDate, .forecastTemp, .forecastWind, .forecastHumidity {
+    color: white;
+}
+
+/*Cities list style*/
+#citiesList {
+    width: fit-content;
+}
+
+#citiesList>* {
+    margin: 2px;
+}
